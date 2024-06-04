@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Amita&family=Poppins:wght@600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+header {
+    margin: 100px 100px;
+    display: flex;
+    height: 19cm;
+    justify-content: space-around;
+}
+
+.rightSide {
+    font-size: xx-large;
+    margin: 50px;
+    margin-left: 200px;
+    width: 1000cm;
+    height: 90%;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #1394a5;
+    color: white;
+    position: relative;
+}
+
+.rightSide:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    z-index: -1;
+    border: 1px solid #1394a5;
+}
+
+.rightSide div {
+    padding: 30px;
+    margin: 30px 0; /* Adjust the spacing as needed */
+    font-family:  'Poppins', sans-serif;
+    font-size: large;
+}
+
+.rightSide a{
+   color:#0dd1eb;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+}
+
+.leftSide {
+    margin: 50px;
+    width: 40%;
+    height: 90%;
+}
+
+.leftSide .box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftSide .box2 #imgg {
+    width: 500px;
+    height: 500px;
+    margin: 100px;
+    border: 1px solid #1394a5;
+}

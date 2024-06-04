@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency covertor-covert your currencyt </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">My Currency Convertor</div>
+        <ul>
+            <!---
+            <li><a href="/">Home</a></li>
+        -->
+            
+            <!--
+                <li><a href="/about.html">About Me</a></li>
+            -->
+            
+        </ul>
+
+    </nav>
+
+    <div class="container">
+        <h1>Choose a currency to convert</h1>
+
+        <form action="/action.php" method="get">
+            <label for="quantity">Choose a quantity : </label>
+            <input type="number" name="quantity" min="1" max="50000">
+            <label for="currency">Choose a currency : </label>
+            <select name="currency">
+                <option value="INR">INDIAN RUPEE </option>
+                <option value="USD">US DOLLAR</option>
+                <option value="EUR">EURO</option>
+            </select>
+
+
+            <button class="btn" type="submit">Submit</button>
+        </form>
+
+
+        <div class="output">
+            <table>
+                <caption>Converted Currency Table</caption>
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Country</th>
+                        <th>Currency</th>
+                        <th>Value</th>
+
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+                
+            </table>
+
+        </div>
+
+    </div>
+
+    <footer>
+        Copyright &copy: All rights reserved
+
+    </footer>
+    <script>
+
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>
